@@ -1,3 +1,4 @@
+const basePath = import.meta.env.BASE_URL;
 import { FaEnvelope, FaFacebook,  } from "react-icons/fa6";
 
 import { FaLinkedinIn } from "react-icons/fa";
@@ -9,18 +10,22 @@ export const Hero = () => {
     {
       id: 1,
       icon: <FaEnvelope size={17} />,
+      href: "mailto:izzahbhutta@gmail.com", 
     },
     {
       id: 2,
       icon: <FaFacebook size={20} />,
+      href:"https://web.facebook.com/?_rdc=1&_rdr"
     },
     {
       id: 3,
       icon: <FaLinkedinIn size={20} />,
+      href:"https://www.linkedin.com/in/izzah-javed-a15067307/"
     },
     {
       id: 4,
       icon: <IoLogoGithub size={20} />,
+      href:"https://github.com/Izzah16"
     },
   ];
 
@@ -45,7 +50,7 @@ export const Hero = () => {
                 </h1>
 
                 <div className="hero-image-box d-md-none text-center">
-                  <img src="assets/img/hero/me.jpg" alt="" />
+                
                 </div>
 
                 <p className="lead">I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people</p>
@@ -56,7 +61,10 @@ export const Hero = () => {
                   <ul className="ul-reset social-icons">
                     {socialIcons.map((icon, index) => (
                       <li key={index}>
-                        <a href="#">{icon.icon}</a>
+                       
+                        <a href={icon.href}  rel="noopener noreferrer">
+                          {icon.icon}
+                        </a>
                       </li>
                     ))}
                   </ul>
@@ -65,7 +73,7 @@ export const Hero = () => {
             </div>
             <div className="right w-half">
               <div className="hero-image-box text-center">
-                <img src="../images/common/me.jpg" alt="logo" />
+              <img src={`${basePath}images/common/me.jpg`} alt="logo" />
               </div>
             </div>
           </div>

@@ -1,3 +1,5 @@
+const basePath = import.meta.env.BASE_URL;
+
 export const linklist = [
   { id: 0, text: "Home", link: "#/" },
   { id: 1, text: "Services", link: "#services" },
@@ -7,6 +9,7 @@ export const linklist = [
   { id: 5, text: "Testimonials", link: "#testimonials-section" },
   { id: 6, text: "Contact", link: "#contact-section" },
 ];
+
 export const hero = [
   {
     id: 1,
@@ -18,8 +21,8 @@ export const hero = [
     title: "Projects Completed",
     text: "05",
   },
-  
-]
+];
+
 export const service = [
   {
     id: 1,
@@ -36,7 +39,6 @@ export const service = [
     title: "UI/UX Design",
     text: "I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people",
   },
- 
 ];
 
 export const projects = [
@@ -44,38 +46,37 @@ export const projects = [
     id: 1,
     title: "Car Rental Site",
     desc: "A sample Project for a Car Rental Service Showcasing modern animated theme.",
-    cover: "../images/portfolio/Carrental.mp4",
-    Url:"https://izzah16.github.io/Carrental-site/"
+    cover: `${basePath}images/portfolio/Carrental.mp4`,
+    Url: "https://izzah16.github.io/Carrental-site/",
   },
   {
     id: 2,
     title: "Shopsy",
     desc: "A shopping site sample animated react app project with interesting animations",
-    cover: "../images/portfolio/Shopsy.mp4",
-    Url:"https://izzah16.github.io/Shopping-site/"
+    cover: `${basePath}images/portfolio/Shopsy.mp4`,
+    Url: "https://izzah16.github.io/Shopping-site/",
   },
   {
     id: 3,
     title: "CodePen Clone",
     desc: "A simple yet cool fun Clone of CodePen",
-    cover: "../images/portfolio/CodePen.mp4",
-    Url:"https://izzah16.github.io/CodePen-Clone/"
+    cover: `${basePath}images/portfolio/CodePen.mp4`,
+    Url: "https://izzah16.github.io/CodePen-Clone/",
   },
   {
     id: 4,
     title: "Food Order Landing Page",
     desc: "A Landing Page for a Food Ordering Website using some cool CSS animations and effects.",
-    cover: "../images/portfolio/FoodOrder.mp4",
-    Url:"https://izzah16.github.io/FoodOrder-Page/"
+    cover: `${basePath}images/portfolio/FoodOrder.mp4`,
+    Url: "https://izzah16.github.io/FoodOrder-Page/",
   },
   {
     id: 5,
     title: "Admin Dashboard",
-    desc: "An Admin Dashboard Panel sample page made using basic HTML and CSS ",
-    cover: "../images/portfolio/Admindashboard.mp4",
-    Url:"https://izzah16.github.io/Admin-Dashboard/"
+    desc: "An Admin Dashboard Panel sample page made using basic HTML and CSS",
+    cover: `${basePath}images/portfolio/Admindashboard.mp4`,
+    Url: "https://izzah16.github.io/Admin-Dashboard/",
   },
-  
 ];
 
 export const experienceData = [
@@ -89,75 +90,69 @@ export const experienceData = [
     id: 2,
     time: "2023 - 2024",
     title: "Frontend Web Developer",
-   
   },
- 
 ];
 
 export const educationData = [
   {
     id: 1,
-    time: "2023-2024 ",
+    time: "2023-2024",
     title: "Courses of Web Development and Designing",
-    
   },
-  
   {
     id: 3,
     time: "2016 - 2020",
     title: "Bachelors",
-   
   },
-  
 ];
 
 export const skillsData = [
-  { id: 1, name: "Figma", percentage: 70, icon: "../images/skill/s1.svg" },
-  { id: 2, name: "HTML5", percentage: 80, icon: "../images/skill/s2.png" },
-  { id: 3, name: "CSS", percentage: 85, icon: "../images/skill/s3.png" },
-  { id: 4, name: "WordPess", percentage: 99, icon: "../images/skill/s4.svg" },
-  { id: 5, name: "React", percentage: 89, icon: "../images/skill/s5.svg" },
-  { id: 6, name: "JavaScript", percentage: 93, icon: "../images/skill/s6.svg" },
+  { id: 1, name: "Figma", percentage: 70, icon: `${basePath}images/skill/s1.svg` },
+  { id: 2, name: "HTML5", percentage: 80, icon: `${basePath}images/skill/s2.png` },
+  { id: 3, name: "CSS", percentage: 85, icon: `${basePath}images/skill/s3.png` },
+  { id: 4, name: "WordPress", percentage: 99, icon: `${basePath}images/skill/s4.svg` },
+  { id: 5, name: "React", percentage: 89, icon: `${basePath}images/skill/s5.svg` },
+  { id: 6, name: "JavaScript", percentage: 93, icon: `${basePath}images/skill/s6.svg` },
 ];
+
 export const testimonialData = [
   {
     id: 1,
-    logo: "./images/testimonials/1.png",
-    userImage: "../images/testimonials/testimonial-1.png",
+    logo: `${basePath}images/testimonials/1.png`,
+    userImage: `${basePath}images/testimonials/testimonial-1.png`,
     quote: "“Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex id, nobis libero enim assumenda totam nemo rerum rem..",
     name: "XYZ",
-    
-   
   },
   {
     id: 2,
-    logo: "./images/testimonials/2.png",
-    userImage: "../images/testimonials/testimonial-2.png",
+    logo: `${basePath}images/testimonials/2.png`,
+    userImage: `${basePath}images/testimonials/testimonial-2.png`,
     quote: "“Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex id, nobis libero enim assumenda totam nemo rerum rem..",
     name: "XYZ",
   },
   {
     id: 3,
-    logo: "./images/testimonials/1.png",
-    userImage: "../images/testimonials/1.jpg",
+    logo: `${basePath}images/testimonials/1.png`,
+    userImage: `${basePath}images/testimonials/1.jpg`,
     quote: "“Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex id, nobis libero enim assumenda totam nemo rerum rem..",
     name: "XYZ",
   },
   {
     id: 4,
-    logo: "./images/testimonials/2.png",
-    userImage: "../images/testimonials/2.jpg",
+    logo: `${basePath}images/testimonials/2.png`,
+    userImage: `${basePath}images/testimonials/2.jpg`,
     quote: "“Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex id, nobis libero enim assumenda totam nemo rerum rem..",
     name: "XYZ",
   },
   {
     id: 5,
-    logo: "./images/testimonials/1.png",
-    userImage: "../images/testimonials/1.jpg",
+    logo: `${basePath}images/testimonials/1.png`,
+    userImage: `${basePath}images/testimonials/1.jpg`,
     quote: "“Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex id, nobis libero enim assumenda totam nemo rerum rem..",
     name: "XYZ",
   },
 ];
+
 
 export const blogs = [
   {

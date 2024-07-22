@@ -1,5 +1,5 @@
 import { linklist } from "../../assets/data/data";
-
+const basePath = import.meta.env.BASE_URL;
 export const Footer = () => {
   return (
     <>
@@ -7,7 +7,7 @@ export const Footer = () => {
         <div className="container text-center">
           <div className="logo-box">
             <a href="/">
-              <img src="../images/common/logo.png" alt="logo" />
+            <img src={`${basePath}images/common/logo.png`} alt="logo" />
             </a>
           </div>
           <div className="footer-menu">

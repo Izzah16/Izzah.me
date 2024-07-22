@@ -1,99 +1,5 @@
-/* import { linklist } from "../../assets/data/data";
-import { NavLink } from "react-router-dom";
 
-export const Header = () => {
-  return (
-    <>
-      <header className="tj-header-area header-absolute">
-        <div className="container flexSB">
-          <div className="logo-box">
-            <NavLink to="/">
-              <img src="../images/common/logo.png" alt="logo" />
-            </NavLink>
-          </div>
-
-          <div className="header-menu">
-            <nav>
-              <ul>
-                {linklist.map((link) => (
-                  <li key={link.id}>
-                    <NavLink to={link.link}>{link.text}</NavLink>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          </div>
-
-          <div className="header-button">
-            <a href="#" className="btn tj-btn-primary">
-              Hire me!
-            </a>
-          </div>
-        </div>
-      </header>
-    </>
-  );
-};
- */
-/* 
-import { useState, useEffect } from "react";
-import { linklist } from "../../assets/data/data";
-import { NavLink } from "react-router-dom";
-
-export const Header = () => {
-  const [isSticky, setIsSticky] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const offset = window.scrollY;
-      if (offset > 0) {
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  return (
-    <>
-      <header className={`tj-header-area header-absolute ${isSticky ? "sticky" : ""}`}>
-        <div className="container flexSB">
-          <div className="logo-box">
-            <NavLink to="/">
-              <img src="../images/common/logo.png" alt="logo" />
-            </NavLink>
-          </div>
-
-          <div className="header-menu">
-            <nav>
-              <ul>
-                {linklist.map((link) => (
-                  <li key={link.id}>
-                    <NavLink to={link.link}>{link.text}</NavLink>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          </div>
-
-          <div className="header-button">
-            <a href="#" className="btn tj-btn-primary">
-              Hire me!
-            </a>
-          </div>
-        </div>
-      </header>
-    </>
-  );
-};
- */
-
+const basePath = import.meta.env.BASE_URL;
 import { useState, useEffect } from "react";
 import { linklist } from "../../assets/data/data";
 import { NavLink } from "react-router-dom";
@@ -130,7 +36,7 @@ export const Header = () => {
         <div className="container flexSB">
           <div className="logo-box">
             <NavLink to="/">
-              <img src="../images/common/logo.png" alt="logo" />
+            <img src={`${basePath}images/common/logo.png`} alt="logo" />
             </NavLink>
           </div>
 
