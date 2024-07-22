@@ -37,7 +37,7 @@ function App() {
 
       {!showLoader && (
         <>
-          <BrowserRouter>
+          <BrowserRouter basename="/Izzah.me">
             <Routes>
               <Route
                 path="/"
