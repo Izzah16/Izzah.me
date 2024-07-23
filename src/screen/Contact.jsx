@@ -94,7 +94,7 @@ export const Contact = () => {
               </li>
               <li>
                 <div className="icon-box">
-                  <TfiEmail />
+                  <TfiEmail size={25} />
                 </div>
                 <div className="text-box">
                   <p>Email</p>

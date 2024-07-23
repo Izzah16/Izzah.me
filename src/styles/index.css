@@ -171,6 +171,7 @@ a h6:hover {
   grid-gap: 30px;
 }
 .grid2 {
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
@@ -1009,6 +1010,7 @@ header img {
   transition: all 0.5s ease;
 }
 .portfolio-box {
+ 
   padding-top: 50px;
   position: relative;
 }
@@ -1031,6 +1033,8 @@ header img {
 }
 
 .portfolio-box .portfolio-item {
+  
+ 
   background-color: var(--tj-theme-accent-2);
   padding: 30px;
   border-radius: 10px;
@@ -1244,6 +1248,10 @@ header img {
 .skills-widget .skill-item p {
   color: var(--tj-theme-primary);
   margin-bottom: 0;
+}
+.skills-section .section-header p{
+  
+  text-align: left;
 }
 /* --------------   End: Skills Section --------------*/
 
@@ -1542,25 +1550,24 @@ header img {
   display: none; /* Show menu icon */
 }
 @media screen and (max-width: 768px) {
+ 
   
   .grid6 {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
   }
-  .header-button{
-    width: 140%;
-  }
+  
+  
   .grid5,
   .grid3,
   .grid4 {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
   }
   .grid2{
-    display: flex;
-    flex-direction: column;
-    grid-gap:10px;
-    width: 110%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    
   }
   /* CSS for menu animation */
   .header-menu {
@@ -1915,7 +1922,11 @@ footer img {
 /* -------------  End: Portfoli Details Area  --------------*/
 @media screen and (max-width:425px){
 
-  }
+  
+  .resume-widget .resume-item .resume-title {
+    font-size: 20px;}
+  .section-header .section-title {
+    font-size: 35px;}
   .tj-header-area .header-button{
    display: none; 
     
@@ -1941,12 +1952,7 @@ justify-content: center;
 .right-box p{
  display: none;
 }
-.grid2{
-  display: flex;
-  flex-direction: column;
-  grid-gap:10px;
-  width: 110%;
-}
+
 
 .portfolio-box{
   padding-top: 10px;
@@ -1958,9 +1964,7 @@ justify-content: center;
   padding-bottom: 40px;
  
 }
-.resume-section .resume-item {
-  margin-right: 0px;
-}
+
 .contact-section{
 padding-top: 40px;
 padding-bottom: 80px;
@@ -1974,15 +1978,10 @@ padding-bottom: 80px;
   left:-30px;
   padding-top: 12px;
 }
-.grid5{
-display: flex;
-flex-direction: column;
-}
-
-.menu-icon{
- margin-left: 200px;
+.contact-info-list .text-box a{
   
-}
+  font-size: 12px;
+}}
 
 @media screen and (max-width: 1250px){
  
@@ -1994,7 +1993,6 @@ flex-direction: column;
    top:900px;
    
   }
-  .header-button{ 
-  }
+  
 }
   
