@@ -1542,9 +1542,7 @@ header img {
   display: none; /* Show menu icon */
 }
 @media screen and (max-width: 768px) {
-  body{
-    width: 130%;
-  }
+  
   .grid6 {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
@@ -1916,8 +1914,7 @@ footer img {
 }
 /* -------------  End: Portfoli Details Area  --------------*/
 @media screen and (max-width:425px){
-  body{
-    width: 130%;
+
   }
   .tj-header-area .header-button{
    display: none; 
@@ -1986,10 +1983,9 @@ flex-direction: column;
  margin-left: 200px;
   
 }
-}
+
 @media screen and (max-width: 1250px){
-  body{
-    width: 130%;}
+ 
   .header-button .tj-btn-primary{
    width: 110%;
    margin-top:-35px;
